@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layla Al-Harithi — Cybersecurity Track</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF; --bg-soft:#F4F5FB;
+    --ink:#262A3A; --muted:#7A7F91;
+    --accent:#5B6EE8; --accent-soft:#EEF0FE;
+    --line:rgba(38,42,58,0.10);
+    --sans:'Inter',sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{background:var(--bg); color:var(--ink); font-family:var(--sans); line-height:1.65;}
+  a{color:var(--accent); text-decoration:none;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+  .eyebrow{font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:600;}
+  nav{position:sticky; top:0; background:rgba(255,255,255,.9); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); z-index:10;}
+  nav .wrap{display:flex; justify-content:space-between; align-items:center; padding:16px 24px;}
+  .brand{font-weight:700; font-size:16px;}
+  nav ul{list-style:none; display:flex; gap:22px;}
+  nav a{font-size:14px; color:var(--ink);}
+
+  .hero{padding:70px 0 56px; text-align:center; border-bottom:1px solid var(--line);}
+  .pill{display:inline-block; background:var(--accent-soft); color:var(--accent); font-size:12px; font-weight:600;
+    padding:6px 14px; border-radius:999px; margin-bottom:18px;}
+  .hero h1{font-weight:700; font-size:clamp(28px,4.5vw,40px); margin-bottom:14px;}
+  .hero p{color:var(--muted); font-size:16px; max-width:50ch; margin:0 auto 26px;}
+  .btn{display:inline-block; font-size:14px; font-weight:600; padding:12px 22px; border-radius:10px;
+    background:var(--accent); color:#fff;}
+
+  section{padding:52px 0; border-bottom:1px solid var(--line);}
+  section h2{font-weight:700; font-size:22px; margin:6px 0 6px;}
+  section p.sub{color:var(--muted); max-width:60ch; margin-bottom:24px;}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:14px;}
+  .card{border:1px solid var(--line); border-radius:12px; padding:18px; background:var(--bg-soft);}
+  .card h3{font-size:15px; font-weight:600; margin-bottom:4px;}
+  .card p{color:var(--muted); font-size:13px;}
+
+  .log{border-left:2px solid var(--line); padding-left:22px; display:flex; flex-direction:column; gap:22px;}
+  .log-entry{position:relative;}
+  .log-entry::before{content:""; position:absolute; left:-28px; top:4px; width:10px; height:10px;
+    border-radius:50%; background:#fff; border:2px solid var(--accent);}
+  .log-time{font-size:12px; color:var(--accent); font-weight:600; display:block; margin-bottom:3px;}
+  .log-entry h3{font-size:15px; font-weight:600;}
+  .log-entry p{color:var(--muted); font-size:13px;}
+
+  footer{padding:50px 0 36px; text-align:center;}
+  footer h2{font-weight:700; font-size:22px; margin:10px 0 8px;}
+  footer p{color:var(--muted); margin-bottom:16px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Layla Al-Harithi</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#log">Timeline</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="pill">Cybersecurity Track</span>
+    <h1>Layla Al-Harithi</h1>
+    <p>Computer Science student at University of Taif, majoring in Cybersecurity — graduating soon.</p>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow">About</div>
+    <h2>Who I am</h2>
+    <p class="sub">
+      Computer Science student at University of Taif, majoring in the Cybersecurity track and
+      preparing to graduate soon. I'm interested in protecting systems and building safe, reliable software.
+    </p>
+  </div>
+</section>
+
+<section id="languages">
+  <div class="wrap">
+    <div class="eyebrow">Languages</div>
+    <h2>Programming languages I use</h2>
+    <p class="sub">Languages I'm comfortable coding in.</p>
+    <div class="grid">
+      <div class="card"><h3>C++</h3><p>Data structures &amp; algorithms.</p></div>
+      <div class="card"><h3>Java</h3><p>Object-oriented programming.</p></div>
+      <div class="card"><h3>HTML</h3><p>Structuring web content.</p></div>
+      <div class="card"><h3>CSS</h3><p>Styling web interfaces.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="log">
+  <div class="wrap">
+    <div class="eyebrow">Timeline</div>
+    <h2>My path so far</h2>
+    <div class="log">
+      <div class="log-entry">
+        <span class="log-time">2022 — Enrolled</span>
+        <h3>University of Taif</h3>
+        <p>Began B.Sc. in Computer Science.</p>
+      </div>
+      <div class="log-entry">
+        <span class="log-time">Ongoing</span>
+        <h3>Cybersecurity Track</h3>
+        <p>Specializing in security-focused coursework.</p>
+      </div>
+      <div class="log-entry">
+        <span class="log-time">Upcoming</span>
+        <h3>Graduation</h3>
+        <p>Preparing to enter the workforce.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h2>Let's talk security.</h2>
+    <p>Open to internships and junior cybersecurity roles.</p>
+    <a href="https://github.com/Laila0055" target="_blank" rel="noopener">GitHub — @Laila0055</a>
+  </div>
+</footer>
+
+</body>
+</html>
